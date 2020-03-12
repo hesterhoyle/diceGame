@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>2 Player Dice Game</title>
+</head>
+<body>
+    <div id="startButton">
+        <button id="start1" onclick="startGame()">-NEW GAME-</button>
+    </div>
+    <div id="gameArea">
+        <div id="player1">
+            <div id="button1">
+                <h1>Player 1</h1>
+                <button id="game1" onclick="clickFunc1()">ROLL!</button>
+                <button id="hold1" onclick="holdPass1()">HOLD!</button>
+                <p id="winLose1"> </p>
+                <img id="diceImg1" src="images/dicedice.gif">
+                <p id="rolled1"> </p>
+                <div class="scoreCard1">
+                    <p class="scoreCardTitle">SCORE</p>
+                    <p id="score1"> </p>
+                </div>
+            </div>
+        </div>
+        <div id="player2">
+            <div id="button2">
+                <h1>Player 2</h1>
+                <button id="game2" onclick="clickFunc2()">ROLL!</button>
+                <button id="hold2" onclick="holdPass2()">HOLD!</button>
+                <p id="winLose2"> </p>
+                <img id="diceImg2" src="images/dicedice.gif">
+                <p id="rolled2"> </p>
+                <div class="scoreCard2">
+                    <p class="scoreCardTitle">SCORE</p>
+                    <p id="score2"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="goSingle">
+        <p class="otherGame">Try 1-player <a href="index.html">HERE</a></p>
+    </div>
+</body>
+<script src="js/dicegame2.js"></script>
+</html>
