@@ -2,14 +2,37 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-#game {
+#game, #gameHard, #startArea {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #button {
     background-color: peru;
+    color: white;
+    height: 50px;
+    width: 100px;
+}
+
+#buttonHard {
+    height: 50px;
+    width: 100px;
+    background-color: maroon;
+    color: white;
+}
+
+#selectNorm {
+    background-color: peru;
+    color: white;
+    height: 50px;
+    width: 100px;
+}
+
+#selectHard {
+    background-color: maroon;
     color: white;
     height: 50px;
     width: 100px;
@@ -21,17 +44,27 @@
     width: 80px;
 }
 
-#winLose, #winLose1, #winLose2 {
+#winLose, #winLoseHard, #winLose1, #winLose2 {
     font-weight: bolder;
     font-size: 20px;
 }
 
-#diceImg, #diceImg1, #diceImg2 {
+#diceImg, #diceImgHard, #diceImg1, #diceImg2, #startImg {
     height: 150px;
     width: 150px;
 }
 
-#buttonArea {
+#startImg {
+    margin-top: 50px;
+}
+
+#buttonSelect {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.buttonArea {
     display: flex;
     width: 400px;
     height: 450px;
@@ -39,6 +72,19 @@
     align-content: center;
     flex-direction: column;
     align-items: center;
+    border: 3px solid peru;
+    background-color: rgb(233, 208, 162);
+}
+
+.buttonArea1 {
+    display: flex;
+    width: 400px;
+    height: 450px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35.5%;
     border: 3px solid peru;
     background-color: rgb(233, 208, 162);
 }

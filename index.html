@@ -8,14 +8,36 @@
     <title>1 Player Dice Game</title>
 </head>
 <body>
+    <div id="start">
+        <div id="startArea">
+            <div class="buttonArea">
+                <h1 id="selection">Select Difficulty</h1>
+                <div id="buttonSelect">
+                    <button id="selectNorm" onclick="selectNorm()">NORMAL<br>(20 points)</button>
+                    <button id="selectHard" onclick="selectHard()">HARD<br>(30 points)</button>
+                </div>
+                <img id="startImg" src="images/dicedice.gif">
+            </div>
+        </div>
+    </div>
     <div id="game">
-        <div id="buttonArea">
+        <div class="buttonArea1">
             <button id="button" onclick="clickFunc()">START!</button>
             <p id="winLose"> </p>
             <img id="diceImg" src="images/dicedice.gif">
             <p id="rolled"> </p>
             <p id="score"> </p>
             <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <div id="gameHard">
+        <div class="buttonArea1">
+            <button id="buttonHard" onclick="clickFuncHard()">START!</button>
+            <p id="winLoseHard"> </p>
+            <img id="diceImgHard" src="images/dicedice.gif">
+            <p id="rolledHard"> </p>
+            <p id="scoreHard"> </p>
+            <button class="reset" onclick="reset()">Reset</button>
         </div>
     </div>
     <div id="goMulti">
